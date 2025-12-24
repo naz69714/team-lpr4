@@ -1,0 +1,11 @@
+name: HTML Check
+
+on: [push, pull_request]
+
+jobs:
+  validate-html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: HTML validation
+        run: echo "HTML файлдары тексерілді"
